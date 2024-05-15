@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JavaScript</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>
+    Costela de Adão
+  </h1>
+  <style>
+    #texto{
+      background-color: #c0c0c0;
+      color: green;
+      font-size: 20px;
+      padding: 15px;
+      text-align: justified;
+      
+    }
+  </style>
+  
+  <p id="texto">
+    Costela de Adão, também conhecida como Monstera, é uma planta trepadeira nativa das florestas tropicais da América Central e América do Sul. Por esse motivo, é uma planta que gosta particularmente de temperaturas quentes e muita umidade.
+  </p>
+  <buttom onclick="mudar_fonte()">
+    Mudar fonte
+  </buttom>
+  <br>
+  <buttom onclick="mudar_cor()">
+    Mudar cor
+  </buttom>
+  <br>
+  <buttom onclick="mudar_fundo()">
+    Mudar fundo
+  </buttom>
+  <br>
+  <buttom onclick="mudar_borda()">
+    Colocar borda
+  </buttom>
+  <br>
+  <buttom onclick="reset()">
+    Reset
+  </buttom>
+  <br>
+  <script >
+    function mudar_cor(){
+      document.getElementById("texto").style.color = "#2F4F4F";
+    }
+    function mudar_fundo(){
+      document.getElementById("texto").style.backgroundColor = "#EEE8AA";
+    }
+    function mudar_borda(){
+      document.getElementById("texto").style.border = "solid";
+    }
+    function mudar_fonte(){
+      document.getElementById("texto").style.fontStyle= "italic";
+    }
+    function reset(){
+      document.getElementById("texto").removeAttribute("style");
+    }
+    
+  </script>
+</body>
+
+</html>
